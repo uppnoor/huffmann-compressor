@@ -3,4 +3,4 @@ project(huffman_compressor C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(huffman_compressor main.c)
+add_executable(huffman_compressor src/main.c)
