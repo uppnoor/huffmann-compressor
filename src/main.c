@@ -1,7 +1,10 @@
 #include <stdio.h>
+#include "frequency_table.h"
+#include "huffman_tree.h"
+
 
 int main(void)
 {
-    printf("Hello, World!\n");
+    readFile("input.txt");
     return 0;
 }
