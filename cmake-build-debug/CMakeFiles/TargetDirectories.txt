@@ -1,0 +1,3 @@
+C:/Users/Uppno/CLionProjects/huffman-compressor/cmake-build-debug/CMakeFiles/huffman_compressor.dir
+C:/Users/Uppno/CLionProjects/huffman-compressor/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Uppno/CLionProjects/huffman-compressor/cmake-build-debug/CMakeFiles/rebuild_cache.dir
