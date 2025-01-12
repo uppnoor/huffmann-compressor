@@ -3,14 +3,14 @@
 
 #include "frequency_table.h"
 
-typedef struct Node
+typedef struct HuffmanNode
 {
     char character;
     int frequency;
-    struct Node *left;
-    struct Node *right;
-} Node;
+    struct HuffmanNode* left;
+    struct HuffmanNode* right;
+} HuffmanNode;
 
-Node* buildHuffmanTree(const FrequencyTable *table);
+HuffmanNode* buildHuffmanTree(FrequencyTable* freqTable);
 
 #endif
