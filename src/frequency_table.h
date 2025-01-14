@@ -1,6 +1,10 @@
 #ifndef FREQUENCY_TABLE_H
 #define FREQUENCY_TABLE_H
 
+/**
+ * Represents a frequency table that holds the frequencies of the chars used in text file.
+ * The chars are added and incremented by their ASCII index in the array.
+ */
 typedef struct
 {
     int frequencies[256];
