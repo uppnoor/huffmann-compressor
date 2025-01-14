@@ -2,6 +2,11 @@
 #include <stdlib.h>
 #include "frequency_table.h"
 
+/**
+* Reads the contents of a file and generates a frequency table for the characters.
+*
+* @param fileName the name of the file to be read
+*/
 void readFile(const char *fileName)
 {
     FILE *file = fopen(fileName, "r");
@@ -38,6 +43,13 @@ void readFile(const char *fileName)
     free(frequency_table);
 }
 
+/**
+* Generates a frequency table by calculating the occurrences of each character in a line.
+*
+* @param frequency_table a pointer to the FrequencyTable structure
+* @param line a character array representing the line of text to analyze
+* @param size_of_line the size of the line array
+*/
 void generateFrequencyTable(FrequencyTable *frequency_table, const char line[], int size_of_line)
 {
     for(int i = 0; i < size_of_line && line[i] != '\0'; i++)
@@ -47,6 +59,12 @@ void generateFrequencyTable(FrequencyTable *frequency_table, const char line[], 
     }
 }
 
+/**
+* Prints the frequencies of characters from the frequency table.
+*
+* @param frequency_table a pointer to the FrequencyTable structure
+* @param size_of_table the size of the frequency table
+*/
 void printFrequencies(FrequencyTable *frequency_table, int size_of_table)
 {
     for(int i = 0; i < size_of_table; i++)

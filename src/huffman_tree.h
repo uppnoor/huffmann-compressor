@@ -3,6 +3,10 @@
 
 #include "frequency_table.h"
 
+/**
+* Represents a node in a Huffman Tree used for encoding and decoding.
+* Each node contains a character, its frequency, and pointers to child nodes.
+*/
 typedef struct HuffmanNode
 {
     char character;
