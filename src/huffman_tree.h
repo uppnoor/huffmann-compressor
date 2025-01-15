@@ -15,6 +15,17 @@ typedef struct HuffmanNode
     struct HuffmanNode* right;
 } HuffmanNode;
 
+/**
+ * A priority queue is used to grab the lowest two values to form a new leaf in the graph.
+ */
+typedef struct PriorityQueue
+{
+    HuffmanNode** nodes;
+    int size;
+    int capacity;
+} PriorityQueue;
+
 HuffmanNode* buildHuffmanTree(FrequencyTable* freqTable);
+PriorityQueue* createPriorityQueue(FrequencyTable* freqTable);
 
 #endif

@@ -25,3 +25,20 @@ static HuffmanNode* createNode(unsigned char character, int frequency)
     node->right = NULL;
     return node;
 }
+
+PriorityQueue* createPriorityQueue(FrequencyTable* frequencyTable)
+{
+    for(int i = 0; i < 256; i++)
+    {
+        if(frequencyTable->frequencies[i] > 0)
+        {
+            HuffmanNode* node = createNode((unsigned char)i, frequencyTable->frequencies[i]);
+            // Code to add node to a priority queue (implementation of a min heap)
+        }
+    }
+}
+
+HuffmanNode* buildHuffmanTree(FrequencyTable* frequency_table)
+{
+
+}
